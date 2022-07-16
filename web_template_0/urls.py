@@ -20,5 +20,5 @@ from Account.views import wx_login
 
 urlpatterns = [
 	path("admin/", admin.site.urls),
-	path("wx_login/", wx_login),
+	path("wx_login/", wx_login)
 ]
