@@ -125,6 +125,8 @@ os.makedirs(MEDIA_ROOT, exist_ok=True)
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-WeiXinApiBase = "https://api.weixin.qq.com/cgi-bin/token"
+AUTH_USER_MODEL = "Account.Account"
+
+# 微信开放平台配置
 WeiXinWebAppID = "wx53cf447461989356"
-WeiXinWebAppSecret = "9970c7f17b89c7dfeda95c91a4ebaec5"
+WeiXinWebAppSecret = "e671c59f03377e1a376ee2e7db7a0cc3"
