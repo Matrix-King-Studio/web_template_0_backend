@@ -16,7 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from Account.views import wx_login
+
 urlpatterns = [
-    path("admin/", admin.site.urls),
-    path("wx_login/")
+	path("admin/", admin.site.urls),
+	path("wx_login/", wx_login),
 ]
