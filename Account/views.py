@@ -1,3 +1,5 @@
+import logging
+
 import requests
 from rest_framework.decorators import api_view
 
@@ -14,7 +16,7 @@ def wx_login(request):
     }
     res = requests.get("https://api.weixin.qq.com/sns/oauth2/access_token", params=params)
     res = res.json()
-    print(f"res 1: {res}")
+    logging.info(f"res 1: {res}")
     access_token = res["access_token"]
     openid = res["openid"]
     # 获取用户信息
@@ -24,5 +26,5 @@ def wx_login(request):
     }
     res = requests.get("https://api.weixin.qq.com/sns/userinfo", params=params)
     res = res.json()
-    print(f"res 2: {res}")
+    logging.info(f"res 2: {res}")
     return res
