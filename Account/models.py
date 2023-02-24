@@ -2,7 +2,7 @@ from django.contrib.auth.base_user import AbstractBaseUser
 from django.db import models
 
 
-class Account(AbstractBaseUser):
+class User(AbstractBaseUser):
 	openid = models.CharField(max_length=64, unique=True)
 	unionId = models.CharField(max_length=64, unique=True)
 	nickname = models.CharField(max_length=64)
