@@ -141,12 +141,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = "Account.User"
 
-LOGIN_REDIRECT_URL = "/"
+# Django-allauth 配置
+SOCIALACCOUNT_ADAPTER = "Account.adaptor.SocialAccountAdapter"
 SOCIALACCOUNT_PROVIDERS = {
     'weixin': {
         'AUTHORIZE_URL': 'https://open.weixin.qq.com/connect/qrconnect',
-        'SCOPE': ['snsapi_login'],
-        "style": "white",
-        "redirect_uri": "https://www.template.matrix-studio.top/#/login"
+        'SCOPE': ['snsapi_login']
     }
 }
