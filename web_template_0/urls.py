@@ -13,18 +13,17 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from allauth.socialaccount.providers.weixin.views import WeixinOAuth2Adapter
-from dj_rest_auth.registration.views import SocialLoginView
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 
+from Account.views import WeixinLogin
 from web_template_0 import settings
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('dj-rest-auth/', include('dj_rest_auth.urls')),
     path('dj-rest-auth/registration/', include('dj_rest_auth.registration.urls')),
-    path('dj-rest-auth/social/weixin/', SocialLoginView.as_view(adapter=WeixinOAuth2Adapter)),
+    path('dj-rest-auth/social/weixin/', WeixinLogin.as_view()),
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
