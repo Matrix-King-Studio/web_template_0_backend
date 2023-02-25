@@ -143,11 +143,7 @@ AUTH_USER_MODEL = "Account.User"
 
 SOCIALACCOUNT_PROVIDERS = {
     'weixin': {
-        'AUTHORIZE_URL': 'https://open.weixin.qq.com/connect/oauth2/authorize',  # for media platform
-        'SCOPE': ['snsapi_base'],
+        'AUTHORIZE_URL': 'https://open.weixin.qq.com/connect/qrconnect',
+        'SCOPE': ['snsapi_login'],
     }
 }
-
-# 微信开放平台配置
-WeiXinWebAppID = "wx53cf447461989356"
-WeiXinWebAppSecret = "b30ceb689c0346aff5470b6e1c364077"
