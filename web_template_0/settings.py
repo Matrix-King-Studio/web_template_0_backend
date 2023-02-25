@@ -141,7 +141,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = "Account.User"
 
-LOGIN_REDIRECT_URL = "https://www.template.matrix-studio.top/#/login"
+LOGIN_REDIRECT_URL = "/"
 SOCIALACCOUNT_PROVIDERS = {
     'weixin': {
         'AUTHORIZE_URL': 'https://open.weixin.qq.com/connect/qrconnect',
