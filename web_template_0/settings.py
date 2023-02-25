@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.weixin',
+    'dj_rest_auth',
+    'dj_rest_auth.registration',
     "rest_framework",
     "Account",
 ]
