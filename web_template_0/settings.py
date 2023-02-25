@@ -146,5 +146,7 @@ SOCIALACCOUNT_PROVIDERS = {
     'weixin': {
         'AUTHORIZE_URL': 'https://open.weixin.qq.com/connect/qrconnect',
         'SCOPE': ['snsapi_login'],
+        "style": "white",
+        "redirect_uri": "https://www.template.matrix-studio.top/#/login"
     }
 }
