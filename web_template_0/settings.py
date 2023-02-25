@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -150,4 +150,4 @@ SOCIALACCOUNT_PROVIDERS = {
 
 # 微信开放平台配置
 WeiXinWebAppID = "wx53cf447461989356"
-WeiXinWebAppSecret = "e671c59f03377e1a376ee2e7db7a0cc3"
+WeiXinWebAppSecret = "b30ceb689c0346aff5470b6e1c364077"
