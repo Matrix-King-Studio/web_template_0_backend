@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-@cx29ued%1@#7zq7b@=#!!!xq*iay(*dngu@s03t285(i6p5g3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["www.template.matrix-studio.top"]
+ALLOWED_HOSTS = ["121.37.67.75", "www.template.matrix-studio.top"]
 CSRF_TRUSTED_ORIGINS = ["https://www.template.matrix-studio.top"]
 
 # Application definition
